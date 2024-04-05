@@ -69,6 +69,18 @@ header{
   padding-bottom: 0.5em
 }
 
+#albums[seen=true] {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear 0s;
+}
+
+#albums[seen=false] {
+  visibility: hidden;
+  opacity: 1;
+  transition: opacity 1s linear 0s, visibility 0s linear 1s; /* permet d'attendre 1s avant de ne plus être visible*/
+}
+
 footer{
   text-align: center;
   padding: 0.5em 0;

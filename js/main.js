@@ -3,9 +3,6 @@
 
 // Pas besoin d'évenement window.onload puisqu'on utilise l'attribut defer
 // lorsque l'on charge notre script
-
-console.log('ah, le chat finit par s\'échapper');
-
 function loadGenres() {
     fetch('http://localhost:3000/genres')
         .then(
@@ -50,25 +47,34 @@ async function loadArtists(genres, genre_name) {
 
     const artists_raw = await fetch(`http://localhost:3000/genres/${genre_name}/artists`);
     const artists = await artists_raw.json();
-    console.log(artists);
 
     const ul = document.querySelector('#main ul');
     ul.innerHTML = '';
     artists.forEach(artist => {
-        console.log(artist);
 
         const li = document.createElement('li');
         const h3 = document.createElement('h3');
         const a = document.createElement('a');
         const img = document.createElement('img');
-        h3.textContent = artist.name;
 
+        h3.textContent = artist.name;
         img.setAttribute('src', artist.photo);
+        a.id = artist.id;
+
         ul.appendChild(li);
         li.appendChild(a);
         li.appendChild(img);
         a.appendChild(h3);
     });
 
+}
+
+async function artistSelected(evt) {
+    const albums_raw = await fetch(`http://localhost:3000/genres/${evt.target.parentElement.id}/artists`);
+    const albums = await albums_raw.json();
+
+    albums.forEach(album => {
+
+    });
 }
 loadGenres();
