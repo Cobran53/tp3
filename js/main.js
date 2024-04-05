@@ -60,6 +60,7 @@ async function loadArtists(genres, genre_name) {
         h3.textContent = artist.name;
         img.setAttribute('src', artist.photo);
         a.id = artist.id;
+        a.addEventListener('click', artistSelected);
 
         ul.appendChild(li);
         li.appendChild(a);
@@ -70,11 +71,33 @@ async function loadArtists(genres, genre_name) {
 }
 
 async function artistSelected(evt) {
-    const albums_raw = await fetch(`http://localhost:3000/genres/${evt.target.parentElement.id}/artists`);
+    const albums_raw = await fetch(`http://localhost:3000/artists/${evt.target.parentElement.id}/albums`);
     const albums = await albums_raw.json();
 
-    albums.forEach(album => {
+    const aside = document.querySelector('aside');
+    aside.classList.add('seen');
 
+    const tbody = document.querySelector('tbody');
+
+    albums.forEach(album => {
+        const tr = document.createElement('tr');
+        const td_cover = document.createElement('td');
+        const img = document.createElement('img');
+        const td_title = document.createElement('td');
+        const td_year = document.createElement('td');
+        const td_label = document.createElement('td');
+
+        img.setAttribute('src', album.cover);
+        td_title.textContent = album.title;
+        td_year.textContent = album.year;
+        td_label.textContent = album.label;
+
+        td_cover.appendChild(img);
+        tr.appendChild(td_cover);
+        tr.appendChild(td_title);
+        tr.appendChild(td_year);
+        tr.appendChild(td_label);
+        tbody.appendChild(tr);
     });
 }
 loadGenres();

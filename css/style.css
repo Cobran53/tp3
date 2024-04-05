@@ -66,16 +66,19 @@ header{
   text-align: center;
   border: solid 1px black;
   opacity: 0;
-  padding-bottom: 0.5em
+  padding-bottom: 0.5em;
+  top: 50%;
+  right: 50%
 }
 
-#albums[seen=true] {
+#albums.seen {
   visibility: visible;
   opacity: 1;
   transition: opacity 1s linear 0s;
+  transform: translate(+50%, -50%);
 }
 
-#albums[seen=false] {
+#albums.unseen {
   visibility: hidden;
   opacity: 1;
   transition: opacity 1s linear 0s, visibility 0s linear 1s; /* permet d'attendre 1s avant de ne plus être visible*/
