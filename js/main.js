@@ -45,22 +45,22 @@ function loadGenres() {
 async function loadArtists(genres, genre_name) {
     const h2 = document.querySelector('#main h2');
     const genre = genres.find(genre => genre.id === genre_name);
-    h2.textContent = `Top ${genre_name} artists`;
+    h2.textContent = `Top ${genre['name']} artists`;
     document.querySelector('#main > p').textContent = genre['description'];
 
     const artists_raw = await fetch(`http://localhost:3000/genres/${genre_name}/artists`);
     const artists = await artists_raw.json();
-    console.log(artists)
+    console.log(artists);
 
-    const ul = document.querySelector('#main ul')
+    const ul = document.querySelector('#main ul');
     ul.innerHTML = '';
     artists.forEach(artist => {
         console.log(artist);
 
-        const li = document.createElement("li");
-        const h3 = document.createElement("h3");
-        const a = document.createElement("a");
-        const img = document.createElement("img");
+        const li = document.createElement('li');
+        const h3 = document.createElement('h3');
+        const a = document.createElement('a');
+        const img = document.createElement('img');
         h3.textContent = artist.name;
 
         img.setAttribute('src', artist.photo);
