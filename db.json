@@ -1,0 +1,130 @@
+{
+    "artists": [{
+            "id": "rolling_stones",
+            "genreId": "rock",
+            "name": "The Rolling Stones",
+            "photo": "https://rovimusic.rovicorp.com/image.jpg?c=91YlNgmaTmzaCa8-xJy2yxyhM-OFI8zG4l-qVpXXB1I=&f=3"
+        },
+        {
+            "id": "bob_marley",
+            "genreId": "reggae",
+            "name": "Bob Marley",
+            "photo": "https://rovimusic.rovicorp.com/image.jpg?c=sJLX8GfPsX5jzugJfGHu71WnbEN5fCjifro6xhIBuB4=&f=4"
+        },
+        {
+            "id": "jimmy_cliff",
+            "genreId": "reggae",
+            "name": "Jimmy Cliff",
+            "photo": "https://rovimusic.rovicorp.com/image.jpg?c=MayKxTxqfVi96xVM9t7WkCpQg_7iAU1wjqLgK_xGXts=&f=4"
+        },
+        {
+            "id": "the_clash",
+            "genreId": "rock",
+            "name": "The Clash",
+            "photo": "https://rovimusic.rovicorp.com/image.jpg?c=WNkb9HDaVDndnv_Zz0LFGg4Q1ghY8VaPylnm7PwcKNY=&f=4"
+        },
+        {
+            "id": "daft_punk",
+            "genreId": "electronic",
+            "name": "Daft Punk",
+            "photo": "https://rovimusic.rovicorp.com/image.jpg?c=7iJbfhova9c3Mpif474UYRyhM-OFI8zG4l-qVpXXB1I=&f=4"
+        }
+    ],
+    "albums": [{
+            "id": "the_rolling_stones",
+            "artistId": "rolling_stones",
+            "year": 1964,
+            "title": "The Rolling Stones",
+            "label": "ABKCO Records",
+            "cover": "https://rovimusic.rovicorp.com/image.jpg?c=utyleQMahNFn3lu0eTdM_QSijaXJlYnq0St31qpAJWo=&f=2"
+        },
+        {
+            "id": "12_5",
+            "year": 1964,
+            "artistId": "rolling_stones",
+            "title": "12x5",
+            "label": "ABKCO Records",
+            "cover": "https://rovimusic.rovicorp.com/image.jpg?c=3UUzxINkzPkogOAYZ_v8MR_TZlp6n_cq-Emr2zx15tU=&f=2"
+        },
+        {
+            "id": "out_of_our_heads",
+            "artistId": "rolling_stones",
+            "year": 1965,
+            "title": "Out of Our Heads",
+            "label": "ABKCO Records",
+            "cover": "https://rovimusic.rovicorp.com/image.jpg?c=-Nc__SkE2s7hDlCImBjQ-ByhM-OFI8zG4l-qVpXXB1I=&f=2"
+        },
+        {
+            "id": "soul_rebels",
+            "artistId": "bob_marley",
+            "year": 1970,
+            "title": "Soul Rebels",
+            "label": "Receiver",
+            "cover": "https://rovimusic.rovicorp.com/image.jpg?c=dC9r22tWOJJtOrMl3rfp9QSijaXJlYnq0St31qpAJWo=&f=2"
+        },
+        {
+            "id": "catch_a_fire",
+            "artistId": "bob_marley",
+            "year": 1973,
+            "title": "Catch a Fire",
+            "label": "Island / PolyGram",
+            "cover": "https://rovimusic.rovicorp.com/image.jpg?c=HE_3cwwlqHXcK3Y3r740WgSijaXJlYnq0St31qpAJWo=&f=2"
+        },
+        {
+            "id": "wonderful_world",
+            "artistId": "jimmy_cliff",
+            "year": 1970,
+            "title": "Wonderful World, Beautiful People",
+            "label": "A&M",
+            "cover": "https://rovimusic.rovicorp.com/image.jpg?c=Kwd-Iw2ILAx_d5dFaic5FFWnbEN5fCjifro6xhIBuB4=&f=2"
+        },
+        {
+            "id": "cliff_hanger",
+            "artistId": "jimmy_cliff",
+            "year": 1985,
+            "title": "Cliff Hanger",
+            "label": "CBS Records",
+            "cover": "https://rovimusic.rovicorp.com/image.jpg?c=F2mqaOuP_Af7cURi5L5_oFWnbEN5fCjifro6xhIBuB4=&f=2"
+        },
+        {
+            "id": "london_calling",
+            "artistId": "the_clash",
+            "year": 1979,
+            "title": "London Calling",
+            "label": "Legacy / Epic",
+            "cover": "https://cdn-s3.allmusic.com/release-covers/400/0000/275/0000275279.jpg"
+        },
+        {
+            "id": "homework",
+            "artistId": "daft_punk",
+            "year": 1997,
+            "title": "Homework",
+            "label": "Virgin",
+            "cover": "https://rovimusic.rovicorp.com/image.jpg?c=XhWFbh-yQxZT-QBajXXGHT6KsMttLlyBmmVTZ6_CLs0=&f=4"
+        },
+        {
+            "id": "random_access_memories",
+            "artistId": "daft_punk",
+            "year": 2013,
+            "title": "Random Access Memories",
+            "label": "Columbia",
+            "cover": "https://rovimusic.rovicorp.com/image.jpg?c=cURvvyu_Jr5yrmDTbuDl4phUoDg0hsvx4F4sL4oO-nA=&f=4"
+        }
+    ],
+    "genres": [{
+            "id": "rock",
+            "name": "Rock",
+            "description": "Rock & Roll is often used as a generic term, but its sound is rarely predictable. From the outset, when the early rockers merged country and blues, rock has been defined by its energy, rebellion and catchy hooks, but as the genre aged, it began to shed those very characteristics, placing equal emphasis on craftmanship and pushing the boundaries of the music. As a result, everything from Chuck Berry's pounding, three-chord rockers and the sweet harmonies of the Beatles to the jarring, atonal white noise of Sonic Youth has been categorized as \"rock.\" That's accurate -- rock & roll had a specific sound and image for only a handful of years. For most of its life, rock has been fragmented, spinning off new styles and variations every few years, from Brill Building Pop and heavy metal to dance-pop and grunge. And that's only natural for a genre that began its life as a fusion of styles."
+        },
+        {
+            "id": "reggae",
+            "name": "Reggae",
+            "description": "Reggae is a music unique to Jamiaca, but it ironically has its roots in New Orleans R&B. Reggae's direct forefather is ska, an uptempo, rhythmic variation based on the New Orleans R&B Jamaican musicians heard broadcast from the US on their transistor radios. Relying on skittering guitar and syncopated rhythms, ska was their interpretation of R&B and it was quite popular in the early '60s. However, during one very hot summer, it was too hot to either play or dance to ska, so the beat was slowed down and reggae was born. Since then, reggae has proven to be as versatile as the blues, as it lends itself to a number of interpretations, from the melodic rock steady of Alton Ellis and the rock and folk-influenced songwriting of Bob Marley to the trippy, near-psychedelic soundscapes of dub artists like Lee \"Scratch\" Perry. It has crossed into the mainstream through the bright, bouncy \"reggae sunsplash\" festivals and pop-oriented bands like UB40, but more adventurous reggae artists, such as Marley and Perry, have influenced countless reggae, folk, rock and dance artists. Their contributions resonate throughout popular music."
+        },
+        {
+            "id": "electronic",
+            "name": "Electronic",
+            "description": "Reaching back to grab the grooves of '70s disco/funk and the gadgets of electronic composition, Electronica soon became a whole new entity in and of itself, spinning off new sounds and subgenres with no end in sight two decades down the pike. Its beginnings came in the post-disco environment of Chicago/New York and Detroit, the cities who spawned house and techno (respectively) during the 1980s. Later that decade, club-goers in Britain latched onto the fusion of mechanical and sensual, and returned the favor to hungry Americans with new styles like jungle/drum'n'bass and trip-hop. Though most all early electronica was danceable, by the beginning of the '90s, producers were also making music for the headphones and chill-out areas as well, resulting in dozens of stylistic fusions like ambient-house, experimental techno, tech-house, electro-techno, etc. Typical for the many styles gathered under the umbrella was a focus on danceable grooves, very loose song structure (if any), and, in many producers, a relentless desire to find a new sound no matter how tepid the results."
+        }
+    ]
+}

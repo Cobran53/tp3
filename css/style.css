@@ -1,0 +1,61 @@
+/* saisissez ici vos règles CSS */
+
+#container
+{
+  width: 980px;
+  margin: 0 auto;
+}
+
+header{
+  text-align: center;
+  padding: 1em 0;
+  margin : 0;
+  background: black;
+  color: white;
+}
+
+#main{
+  position: relative;
+}
+
+#main h2
+{
+  margin-bottom: 1em;
+}
+
+#main nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#main p {
+  text-align: justify;
+}
+
+#main ul{
+  padding : 0;
+}
+
+#main form, #main nav > p{
+  display: inline-block;
+}
+
+#albums{
+  visibility: hidden;
+  width:500px;
+  background-color: white;
+  position:absolute;
+  text-align: center;
+  border: solid 1px black;
+  opacity: 0;
+  padding-bottom: 0.5em
+}
+
+footer{
+  text-align: center;
+  padding: 0.5em 0;
+  margin : 0;
+  background: black;
+  color: white;
+}
