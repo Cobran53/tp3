@@ -20,7 +20,7 @@ function loadGenres() {
                 const select = document.querySelector('#main nav form select');
                 select.addEventListener('change', evt => {
                     console.log(evt.target.value);
-                    loadArtists(genres, evt.target.value);
+                    loadArtists(genres, evt.target.value); // on ignore la promesse puisqu'on en a besoin
                 });
                 genres.forEach(genre => {
                     const option = document.createElement('option');
@@ -28,7 +28,7 @@ function loadGenres() {
                     option.textContent = genre['name'];
                     select.add(option);
                 });
-                loadArtists(genres, select.firstChild.value);
+                loadArtists(genres, select.firstChild.value); // on ignore la promesse puisqu'on en a besoin
             }
         )
         .catch(
@@ -76,8 +76,12 @@ async function artistSelected(evt) {
 
     const aside = document.querySelector('aside');
     aside.classList.add('seen');
+    if (aside.classList.contains('unseen')) {
+        aside.classList.remove('unseen')
+    }
 
     const tbody = document.querySelector('tbody');
+    tbody.innerHTML = ''; // on remet à zéro le tbody
 
     albums.forEach(album => {
         const tr = document.createElement('tr');
@@ -98,6 +102,14 @@ async function artistSelected(evt) {
         tr.appendChild(td_year);
         tr.appendChild(td_label);
         tbody.appendChild(tr);
+    });
+
+    const button = document.querySelector('button');
+    button.addEventListener("click", async evt => {
+        evt.preventDefault(); // on évite de partir sur une autre page
+        const aside = document.querySelector('aside');
+        aside.classList.add('unseen'); // on affiche, avec des classes pour les transitions
+        aside.classList.remove('seen');
     });
 }
 loadGenres();
