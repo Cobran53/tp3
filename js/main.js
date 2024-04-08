@@ -19,7 +19,7 @@ function loadGenres() {
             genres =>  {
                 const select = document.querySelector('#main nav form select');
                 select.addEventListener('change', evt => {
-                    console.log(evt.target.value);
+                    // console.log(evt.target.value);
                     loadArtists(genres, evt.target.value); // on ignore la promesse puisqu'on en a besoin
                 });
                 genres.forEach(genre => {
