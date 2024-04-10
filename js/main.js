@@ -77,7 +77,7 @@ async function artistSelected(evt) {
     const aside = document.querySelector('aside');
     aside.classList.add('seen');
     if (aside.classList.contains('unseen')) {
-        aside.classList.remove('unseen')
+        aside.classList.remove('unseen');
     }
 
     const tbody = document.querySelector('tbody');
@@ -105,7 +105,7 @@ async function artistSelected(evt) {
     });
 
     const button = document.querySelector('button');
-    button.addEventListener("click", async evt => {
+    button.addEventListener('click', async evt => {
         evt.preventDefault(); // on évite de partir sur une autre page
         const aside = document.querySelector('aside');
         aside.classList.add('unseen'); // on affiche, avec des classes pour les transitions
